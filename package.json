@@ -1,13 +1,13 @@
 {
   "name": "joehannes-steampunk-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a geekish steampunk influenced ui theme with darkish styles",
   "keywords": [
     "ui",
     "theme",
-	"steampunk",
-	"joehannes"
+    "steampunk",
+    "joehannes"
   ],
   "repository": "https://github.com/joehannes-ux/joehannes-steampunk-ui",
   "license": "MIT",
