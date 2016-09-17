@@ -8,10 +8,12 @@
 .btn {
   color: lighten(@text-color, 6%);
   background-color: @button-background-color;
+  box-shadow: 0 0 2px 1px lighten(@button-background-color, 10%);
   &:hover,
   &:focus {
     color: @text-color-highlight;
     background-color: @button-background-color-hover;
+	box-shadow: 0 0 3px 1px lighten(@text-color-highlight, 10%);
   }
   &:active {
     color: fade(@text-color-selected, 66%);

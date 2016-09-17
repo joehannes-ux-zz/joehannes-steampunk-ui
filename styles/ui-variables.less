@@ -12,10 +12,10 @@
 
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           hsl(27,57%,33%);
+@text-color-subtle:    hsl(33,57%,63%);
+@text-color-highlight: hsl(67,27%,33%);
+@text-color-selected:  hsl(0,77%,63%);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -33,12 +33,12 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: hsl(33,23%,5%);
+@base-border-color: hsl(33, 57%, 23%);
 
 // Component colors
-@pane-item-background-color: @base-background-color;
-@pane-item-border-color:     @base-border-color;
+@pane-item-background-color: lighten(@base-background-color, 5%);
+@pane-item-border-color:     lighten(@base-border-color, 50%);
 
 @input-background-color: @app-background-color;
 @input-border-color:     @base-border-color;
@@ -55,16 +55,21 @@
 @overlay-background-color: lighten(@base-background-color, 5%);
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color:          darken(@text-color-highlight, 30%);
+@button-background-color-hover:    lighten(@button-background-color, 5%);
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
+@tab-bar-bottom-border-color: lighten(@base-border-color, 10%);
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 20%);
 @tab-border-color:            @base-border-color;
+@tab-height:				  20px;
+@tab-radius:				  45px;
+@tab-skew:					  45deg;
+@tab-bottom-border-height:	  3px;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
@@ -78,17 +83,17 @@
 
 // Sizes
 @font-size: 12px;
-@input-font-size: 14px;
+@input-font-size: 13px;
 
 @disclosure-arrow-size: 12px;
 
-@component-padding: 10px;
-@component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
+@component-padding: 5px;
+@component-icon-padding: 3px;
+@component-icon-size: 12px;
+@component-line-height: 22px;
 
-@tab-height: 30px;
+@tab-height: 24px;
 
 // Misc
-@component-border-radius: 2px;
+@component-border-radius: 3px;
 @font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
